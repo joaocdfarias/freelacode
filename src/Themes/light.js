@@ -5,12 +5,14 @@ const light = {
     secondary: "#CAECF9",
     background: "#FFFFFF",
     backgroundCard: "#F6FCFD",
-    textColor: "#CAECF9",
+    textColor: "#F6FCFD",
+    secondaryTextColor: "#2F2E41",
     starColor: "#ECC94B",
   },
   size: {
     fontSize: "18px",
     fontSizeMedium: "24px",
+    fontSizeBig: "36px",
     fontSizeLarge: "48px",
   },
 };
