@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import light from "./Themes/light";
 import Header from "./Header";
 import Banner from "./Banner";
+import About from "./About";
 import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Container maxWidth="lg">
         <Header />
         <Banner />
+        <About />
       </Container>
     </ThemeProvider>
   );
