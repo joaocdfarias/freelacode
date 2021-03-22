@@ -4,6 +4,10 @@ import light from "./Themes/light";
 import Header from "./Header";
 import Banner from "./Banner";
 import About from "./About";
+import Devs from "./Devs";
+import Comments from "./Comments";
+import DataCard from "./DataCard";
+import Footer from "./Footer";
 import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
@@ -14,7 +18,11 @@ function App() {
         <Header />
         <Banner />
         <About />
+        <Devs />
+        <Comments />
+        <DataCard />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
