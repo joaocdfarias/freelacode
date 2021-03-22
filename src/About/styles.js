@@ -6,6 +6,7 @@ export const BannerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  height: 400px;
 `;
 
 export const BannerItem = styled.div`
