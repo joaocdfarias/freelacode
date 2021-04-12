@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import light from "../Themes/light";
+import { ModalContext } from "../Contexts/ModalContext";
+
 import { NavHeader, Logo, Nav } from "./styles";
 
 function Header() {
+  const { handleClick } = useContext(ModalContext);
+
   return (
     <>
       <NavHeader>
@@ -14,7 +18,14 @@ function Header() {
           <li>Contato</li>
           <li>Sobre</li>
           <li>Login</li>
-          <li style={{ color: light.colors.primary, fontWeight: "bold" }}>
+          <li
+            style={{
+              color: light.colors.primary,
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+            onClick={handleClick}
+          >
             Cadastre-se
           </li>
         </Nav>

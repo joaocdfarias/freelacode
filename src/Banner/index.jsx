@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ModalContext } from "../Contexts/ModalContext";
 import { Wrapper, Image, Text, Button, ButtonWrapper } from "./styles";
 import light from "../Themes/light";
 
 function Banner() {
+  const { handleClick } = useContext(ModalContext);
+
   return (
     <Wrapper>
       <Text>
@@ -15,7 +18,9 @@ function Banner() {
           projeto. Nós te conectamos de web designers até full-stack developers.
         </p>
         <ButtonWrapper>
-          <Button primary>Criar conta</Button>
+          <Button primary onClick={handleClick}>
+            Criar conta
+          </Button>
           <Button>Saiba mais</Button>
         </ButtonWrapper>
       </Text>

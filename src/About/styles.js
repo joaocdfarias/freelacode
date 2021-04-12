@@ -7,6 +7,11 @@ export const BannerWrapper = styled.div`
   justify-content: center;
   gap: 20px;
   height: 400px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const BannerItem = styled.div`
