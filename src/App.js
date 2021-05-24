@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react'
 //
-import light from "./Themes/light";
-import Header from "./Header";
-import Banner from "./Banner";
-import About from "./About";
-import Devs from "./Devs";
-import Comments from "./Comments";
-import DataCard from "./DataCard";
-import Footer from "./Footer";
-import Modal from "./Components/Modal";
+import light from './Themes/light'
+import Header from './Header'
+import Banner from './Banner'
+import About from './About'
+import Devs from './Devs'
+import Comments from './Comments'
+import DataCard from './DataCard'
+import Footer from './Footer'
+import Modal from './Components/Modal'
 //
-import { Container } from "@material-ui/core";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "./GlobalStyle";
-import { ModalContext } from "./Contexts/ModalContext";
+import { Container } from '@material-ui/core'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle } from './GlobalStyle'
+import { ModalContext } from './Contexts/ModalContext'
 
 function App() {
-  const [openModal, setOpenModal] = React.useState(false);
+  const [openModal, setOpenModal] = React.useState(false)
 
   function handleClick() {
-    setOpenModal(!openModal);
-    console.log(openModal);
+    setOpenModal(!openModal)
+    console.log(openModal)
   }
 
   return (
@@ -39,7 +39,7 @@ function App() {
       </Container>
       <Footer />
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

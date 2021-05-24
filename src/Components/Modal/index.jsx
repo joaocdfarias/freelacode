@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
-import { ModalBackground, Button, ModalWrapper, ModalImage } from "./styles";
+import React, { useContext } from 'react'
+import { ModalBackground, Button, ModalWrapper, ModalImage } from './styles'
 
-import { ModalContext } from "../../Contexts/ModalContext";
+import { ModalContext } from '../../Contexts/ModalContext'
 
 function Modal() {
-  const { handleClick } = useContext(ModalContext);
+  const { handleClick } = useContext(ModalContext)
+
   return (
     <div>
       <ModalBackground active>
@@ -14,7 +15,7 @@ function Modal() {
         </ModalWrapper>
       </ModalBackground>
     </div>
-  );
+  )
 }
 
-export default Modal;
+export default Modal
